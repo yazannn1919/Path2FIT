@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - Path2FIT</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- INTERNAL CSS -->
+    <style>
+        /* Page Title */
+        h1 {
+            text-align: center;
+            color: #13293d;
+            margin-top: 25px;
+            font-size: 40px;
+        } 
+
+        p {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Contact Form Styling */
+        form {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #2E86FF;
+            margin-top: 25px;
+        }
+
+        form p {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        fieldset {
+            border: 2px solid #13293d;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #EEF4FF;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #13293d;
+            padding:10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], textarea, select {
+            width: 90%;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #2E86FF;
+            margin-top: 5px;
+        }
+        input[list="contact-person"] , datalist{
+            width: 90%;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #2E86FF;
+            margin-top: 5px;
+        }
+
+        /* Buttons */
+        input[type="submit"], input[type="reset"] {
+            padding: 12px 20px;
+            margin: 5px;
+            background-color: #13293d;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #dc2f02;
+            color: white;
+        }
+
+        /* Other Ways to Reach Us */
+        #other-ways {
+            border: 2px #2E86FF solid;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #other-ways h2 {
+            color: #13293d;
+            text-align: center;
+        }
+        #other-ways img {
+            display: block;
+            margin-left: 2%;
+            width: 50px;
+            height: 50px;
+        }
+
+        #other-ways a{
+            color:#13293d;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <table>
+            <tr>
+                <td>
+                    <img src="./images/logo.png" alt="logo" width="100" height="30">
+                </td>
+                <td>
+                    <a href="index.html">Home</a> |
+                    <a href="about.html">About Us</a> |
+                    <a href="learning-hub.html">Learning Hub</a> |
+                    <a href="Growth-Tools.html">Self-Assessment & Growth Tools</a> |
+                    <a href="success-stories.html">Success Stories</a> |
+                    <a href="workshops.html">Workshops &amp; Events</a> |
+                    <a href="contact.html">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <h1>Contact Us</h1>
+
+    <p style="text-align: center; color: #13293d; font-size: 110%; font-weight: bold;">
+        If you have questions about IT majors, roadmaps, or this project, you can use the form below<br>
+        to send us your feedback or questions. We aim to respond within 2 business days.
+    </p>
+
+    <form action="/index.html" method="get">
+        <fieldset>
+            <legend>Get in Touch</legend>
+
+            <p>
+                Full Name:<br>
+                <input type="text" name="full-name" required>
+            </p>
+            <br>
+            <p>
+                Email Address:<br>
+                <input type="text" name="email" required>
+            </p>
+            <br>
+            <p>
+                Choose a Topic:<br>
+                <select name="topic">
+                    <option value="general">General Question</option>
+                    <option value="ai">Question about AI</option>
+                    <option value="cyber">Question about Cybersecurity</option>
+                    <option value="se">Question about Software Engineering</option>
+                    <option value="game">Question about Game Development</option>
+                </select>
+            </p>
+            <br>
+            <datalist id="contact-person"> 
+                <option value="Yazan"></option>
+                <option value="Basheer"></option>   
+                <option value="karam"></option>
+                <option value="Khalid Dabbour"></option>
+                <option value="Ahmad Jihad"></option>
+                <option value="Shahrat Hassan"></option>
+                <option value="Ahmad Massad"></option>
+                <option value="Suliman Shukair"></option>
+            </datalist>
+            <p>
+                Choose who you want to contact:<br>
+                <input list="contact-person" name="contact-person" required>
+            </p>
+            <br>
+            <p>
+                Your Message:<br>
+                <textarea name="contact-message" rows="6" cols="40"></textarea>
+            </p>
+            <br>
+            <p style="text-align: right;">
+                <input type="submit" value="Send Message (Simulation)">
+                <input type="reset" value="Reset">
+            </p>
+        </fieldset>
+    </form>
+
+    <table style="width: 60%; margin-left: 20%; margin-right: 20%; padding: 15px;">
+        <tr>
+            <td width="44%">
+                <div id="other-ways">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td width="20%"><img src="./images/Email.png" alt="Email Icon" style=" width:50px; height: 50px; margin: 20px;"></td>
+                            <td><h2 style="text-align: left; margin-left: 10px;" >Contact us by Email</h2></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: left;">
+                                <ul type="square" style="color: #13293d;">
+                                    <li><a href="mailto:202411576@students.asu.eddu.jo">202411576@students.asu.eddu.jo</a><br></li>
+                                    <li><a href="mailto:202411567@students.asu.eddu.jo">202411567@students.asu.eddu.jo</a><br></li>
+                                    <li><a href="mailto:202411573@students.asu.eddu.jo">202411573@students.asu.eddu.jo</a><br></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>&nbsp;&nbsp;</td>
+            <td width="60%">
+                <div id="other-ways">
+                    <table style="width: 100%;">
+                        <tr style="width: 100%;">
+                            <td width="20%"><img src="./images/Location.png" alt="Location Icon" style=" width:50px; height: 50px; margin: 20px;"></td>
+                            <td><h2 style="text-align: left; margin-left: 10px;">Other Ways to Reach Us</h2></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <p style="font-size: 110%; text-align: justify; ">
+                                You can also talk to us directly at the university or through student groups related to the Faculty of Information Technology.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <p id="back-to-top">
+        <a href="#Top" style="color: #dc2f02;">back to top</a>
+    </p>
+    <div id="footer" style="padding: 30px;">
+        <p>&copy; 2025 Path2FIT &nbsp;|&nbsp; Built by ASU FIT Students</p>
+    </div>
+</body>
+</html>

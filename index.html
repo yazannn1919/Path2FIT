@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Path2FIT</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- INTERNAL CSS -->
+    <style>
+        /* Home Section */
+        #home-intro h1 {
+            color: #13293d;
+            font-size: 40px;
+            background-color: #eaf1ffed;
+            padding: 15px; 
+        }
+
+        #home-intro p {
+            background-color: rgba(19, 41, 61, 0.945);
+            color: white;
+            margin:50px auto 50px auto; 
+            padding: 5px;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        /* Majors Section */
+        #fit-majors {
+            padding: 30px;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            font-style: normal;
+        }
+
+        #fit-majors h2 {
+            color: #2667ff;
+        }
+
+        /* Each major box */
+        .major-box {
+            background-color: white;
+            border: 2px solid #2E86FF;
+            border-radius: 10px;
+            padding:none;
+            margin: 0px auto 25px;
+            width: 80%;
+        }
+
+        .major-box:hover {
+            background-color: #EEF4FF;
+            border-color: #13293d;
+        }
+
+        .major-box img {
+            margin: auto;
+            border-radius: 8px;
+            width: 100%;
+            height: 250px;
+        }
+
+        .major-box h3{
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        .major-box p {
+            text-align: center;
+            padding: 10px   
+        }
+
+        .major-box a {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2E86FF;
+            text-decoration: none;
+        }
+
+        .major-box a:hover {
+            text-decoration: underline;
+            color: #dc2f02;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="Top">
+        <table>
+            <tr>
+                <td>
+                    <img src="./images/logo.png" alt="logo" width="100" height="30">
+                </td>
+                <td>
+                    <a href="index.html">Home</a> |
+                    <a href="about.html">About Us</a> |
+                    <a href="learning-hub.html">Learning Hub</a> |
+                    <a href="Growth-Tools.html">Self-Assessment & Growth Tools</a> |
+                    <a href="success-stories.html">Success Stories</a> |
+                    <a href="workshops.html">Workshops &amp; Events</a> |
+                    <a href="contact.html">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- Home / Intro -->
+    <div id="home-intro" style=" padding: 80px 20px 0px; text-align: center;" >
+        <h1>Path2FIT - Your IT Career Launchpad</h1>
+
+        <p>
+            Welcome to Path2FIT, created by students from the Faculty of Information Technology (FIT) at ASU.  
+            Our mission is to help you <i>discover your ideal IT major</strong>, understand your 
+            <strong>roadmap</strong>, and start building your <strong>future career</strong> with confidence.
+            <br><br>
+            Whether you're curious about <em>AI, Cybersecurity, Software Engineering,</em> or 
+            <em>Game Development</em>, we're here to guide you step by step.
+        </p>
+    </div>
+
+    <!-- FIT Majors Overview -->
+    <div id="fit-majors">
+        <h2>Explore FIT Majors at ASU</h2>
+        <p>Select a major to view roadmaps, career paths, and real guidance.</p>
+
+        <!-- AI -->
+        <div class="major-box" id="major-ai">
+            <img src="./images/AI.jpg" alt="AI Icon">
+            <h3>Artificial Intelligence</h3>
+            <p>
+                AI focuses on building systems that can learn, adapt, and make smart predictions.<br>
+                It is the future of technology and one of the fastest-growing fields in the world.
+            </p>
+            <p>
+                <a href="learning-hub.html#ai-section">Go to AI Roadmap &amp; Details</a>
+            </p>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="major-box" id="major-cyber">
+            <img src="./images/Cyber securirty.jpg"  alt="Cyber Icon">
+            <h3>Cybersecurity</h3>
+            <p>
+                Cybersecurity protects digital systems and data from attacks. <br>
+                This major is perfectif you enjoy solving mysteries and defending against threats.
+            </p>
+            <p>
+                <a href="learning-hub.html#cyber-section">Go to Cybersecurity Roadmap &amp; Details</a>
+            </p>
+        </div>
+
+        <!-- Software Engineering -->
+        <div class="major-box" id="major-se">
+            <img src="./images/SE.jpg"  alt="SE Icon">
+            <h3>Software Engineering</h3>
+            <p>
+                Software Engineering teaches you how to build apps, websites, <br>
+                systems, and digital solutions that the world uses every day.
+            </p>
+            <p>
+                <a href="learning-hub.html#se-section">Go to Software Engineering Roadmap &amp; Details</a>
+            </p>
+        </div>
+
+        <!-- Game Development -->
+        <div class="major-box" id="major-game">
+            <img src="./images/Games ddevelopment.jpg"  alt="Game Icon">
+            <h3>Game Development</h3>
+            <p>
+                Combine creativity and programming to build interactive <br>
+                 games, characters, and digital worlds in this exciting major.
+            </p>
+            <p>
+                <a href="learning-hub.html#game-section">Go to Game Development Roadmap &amp; Details</a>
+            </p>
+        </div>
+
+    </div>
+    <p id="back-to-top">
+        <a href="#Top" style="color: #dc2f02;">back to top</a>
+    </p>
+    <div id="footer">
+        <p>&copy; 2025 Path2FIT &nbsp;|&nbsp; Built by ASU FIT Students</p>
+    </div>
+
+</body>
+</html>

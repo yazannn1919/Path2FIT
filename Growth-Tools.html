@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Self-Assessment Quiz - Path2FIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table-style.css">
+    <style>
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #13293d;
+            margin-top: 25px;
+        }
+
+        /*vidio-section styling*/
+        
+        .Assesment-header{
+            background-color: #eaf1ffd6;
+        }
+        form {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 10px;
+            border: 2px solid #2E86FF;
+        }
+
+        form p {
+            margin: auto;
+            text-align: left
+        }
+
+        fieldset {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #13293d;
+            background-color: #EEF4FF;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #13293d;
+            padding: 0 10px;
+        }
+
+        .question {
+            margin: 8px 0;
+        }
+
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #13293d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #dc2f02;
+            color: white;
+        }
+
+        #section {
+            border: 5px double #13293d;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+            margin-top: 25px;
+            background-color: #eaf1ffa7;
+        }
+        #section table {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+        }
+        #section video{
+            width: 100%;
+            height: 50%;
+            border-radius: 10px;
+        }
+        #section td {
+            width: 50%;
+            padding: 15px;
+        }
+        #section h3 {
+        color: #13293d;
+        }
+        #section p {
+            font-size: 16px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <table>
+            <tr>
+                <td>
+                    <img src="./images/logo.png" alt="logo" width="100" height="30">
+                </td>
+                <td>
+                    <a href="index.html">Home</a> |
+                    <a href="about.html">About Us</a> |
+                    <a href="learning-hub.html">Learning Hub</a> |
+                    <a href="Growth-Tools.html">Self-Assessment & Growth Tools</a> |
+                    <a href="success-stories.html">Success Stories</a> |
+                    <a href="workshops.html">Workshops &amp; Events</a> |
+                    <a href="contact.html">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <h1>Self-Assessment & Growth Tools</h1>
+    <p style="text-align: center; color: #13293d; font-size: 110%; font-weight: bold;">Jump into our Self-Assessment & Growth Tools and start figuring out the career path that's right for you! <br>
+         Explore fun tools that guide you through your strengths and interests. <br>
+         Finish with a quick self-assessment that helps you pick the career that fits you best!</p>
+
+    <div id="section">
+        <h2 style="text-align: center; font-size: 30px; color:#13293d">Step Into the Journey to Find Your Dream Career!</h2>
+        <p style="text-align: center;">Some videos that would put you on the right way for choosing your career path—watch<br>
+             them to explore your interests, discover your strengths, and get started on a path that fits you.</p>
+      <table>
+        <tr>
+            <td><video src="./images/what is career.mp4" alt="video" controls muted></video></td>
+            <td>
+                <h3>What is Career !?</h3>
+                <p>
+                    "A career is the path of work you choose over time to grow your skills,
+                    your goals, and build a life you enjoy. It's more than just a job—it's your
+                    long-term journey in work and personal development."
+                </p>
+            </td>
+        </tr>
+        <tr><td colspan="2"><hr></td></tr>
+        <tr>
+            <td>
+                <h3>Using Self-Evaluation to Choose a Career</h3>
+                <p>
+                    "This video guides you through the process of self-evaluation to help you identify
+                    your strengths, interests, and values. By understanding yourself better, you canmake informed
+                    decisions about which IT career path aligns best with your personal attributes"
+                </p>
+            </td>
+            <td><video src="./images/Using Self-Evaluation to Choose a Career.mp4" alt="video" controls muted></video></td>
+        </tr>
+        <tr><td colspan="2"><hr></td></tr>
+        <tr>
+            <td><video src="./images/Unlock Your Passion in Tech!.mp4" alt="video" controls muted></video></td>
+            <td>
+                <h3>Unlock Your Passion in Tech!</h3>
+                <p>
+                    "Dive deep into the world of technology, uncover what excites you the most,
+                    and start creating a career path that challenges you, inspires growth,
+                    and opens doors to endless possibilities."
+                </p>
+            </td>
+        </tr>
+      </table>
+    </div>
+
+    <h1 style="background-color: #eaf1ffed; padding: 15px; margin-top: 100px;">Self-Assessment</h1>
+    <form  method="get">
+        <p style="font-size: 18px; text-align: center;">
+            Ready to discover your tech superpower? 🎯<br>
+            <strong>No right or wrong answers —</strong> just tick the boxes that make you go 
+            <em>"Yes!"</em> or <em>"Heck yeah!"</em> 🚀
+        </p>
+        <p style="width: 80%; margin: auto; text-align: center;">
+            <strong>At the end:</strong> Count your checks in each section &amp; see which major fits you most.
+        </p>
+        <br>
+        <!-- AI Questions -->
+        <fieldset>
+            <legend>Artificial Intelligence</legend>
+
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new AI preference just landed in your list!')"> I enjoy finding patterns in everyday things.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new AI preference just landed in your list!')"> I like solving logical puzzles.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new AI preference just landed in your list!')"> I am curious about how computers can “learn.”</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new AI preference just landed in your list!')"> I enjoy thinking about how to make tasks smarter or easier.</p>
+            <p class="question"><input type="checkbox" onclick="alert('AI might just be your future best friend… career-wise!')"> I find data or statistics interesting.</p>
+            <p class="question"><input type="checkbox" onclick="alert('AI might just be your future best friend… career-wise!')"> I like analyzing why things happen.</p>
+            <p class="question"><input type="checkbox" onclick="alert('AI might just be your future best friend… career-wise!')"> I enjoy predicting outcomes (even simple ones).</p>
+            <p class="question"><input type="checkbox" onclick="alert('AI might just be your future best friend… career-wise!')"> I like experimenting to see how things change.</p>
+            <p class="question"><input type="checkbox" onclick="alert('From what we can tell, youre this close to joining the AI side!')"> I enjoy figuring out “why” something happened.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Congrats! Looks like AI is calling your name!')"> I'm comfortable working with logical step-by-step tasks.</p>
+
+        </fieldset>
+
+        <!-- Cybersecurity Questions -->
+        <fieldset>
+            <legend>Cybersecurity</legend>
+
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new cyber preference just landed in your list!')"> I like discovering hidden things or secrets.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new cyber preference just landed in your list!')"> I am curious about how hackers think.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new cyber preference just landed in your list!')"> I enjoy solving mysteries or investigating problems.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new cyber preference just landed in your list!')"> I like protecting people or systems.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Cyber might just be your future best friend… career-wise!')"> I enjoy learning how things can go wrong.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Cyber might just be your future best friend… career-wise!')"> I like identifying weaknesses in systems or situations.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Cyber might just be your future best friend… career-wise!')"> I enjoy challenges that require patience.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Cyber might just be your future best friend… career-wise!')"> I like understanding how networks or devices work.</p>
+            <p class="question"><input type="checkbox" onclick="alert('From what we can tell, youre this close to joining the cyber side!')"> I feel good when solving complex problems.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Congrats! Looks like cyber is calling your name!')"> I pay attention to details.</p>
+
+        </fieldset>
+
+        <!-- Software Engineering Questions -->
+        <fieldset>
+            <legend>Software Engineering</legend>
+
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new SE preference just landed in your list!')"> I like building or creating things.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new SE preference just landed in your list!')"> I enjoy planning or organizing tasks.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new SE preference just landed in your list!')"> I am curious about how apps or websites work.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new SE preference just landed in your list!')"> I like breaking big problems into smaller steps.</p>
+            <p class="question"><input type="checkbox" onclick="alert('SE might just be your future best friend… career-wise!')"> I enjoy working on long-term projects.</p>
+            <p class="question"><input type="checkbox" onclick="alert('SE might just be your future best friend… career-wise!')"> I like learning how systems connect together.</p>
+            <p class="question"><input type="checkbox" onclick="alert('SE might just be your future best friend… career-wise!')"> I enjoy improving or fixing things.</p>
+            <p class="question"><input type="checkbox" onclick="alert('SE might just be your future best friend… career-wise!')"> I like thinking in a structured, organized way.</p>
+            <p class="question"><input type="checkbox" onclick="alert('From what we can tell, youre this close to joining the SE side!')"> I enjoy sketching ideas or planning designs.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Congrats! Looks like SE is calling your name!')"> I like making useful tools or solutions.</p>
+
+        </fieldset>
+
+        <!-- Game Development Questions -->
+        <fieldset>
+            <legend>Game Development</legend>
+
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new game dev preference just landed in your list!')"> I enjoy playing games and thinking about how they work.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new game dev preference just landed in your list!')"> I like creative storytelling.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new game dev preference just landed in your list!')"> I enjoy designing visuals or imagining worlds.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Boom! A new game dev preference just landed in your list!')"> I like mixing creativity with logic.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Game dev might just be your future best friend… career-wise!')"> I think about how to improve game ideas.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Game dev might just be your future best friend… career-wise!')"> I enjoy experimenting with creative concepts.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Game dev might just be your future best friend… career-wise!')"> I like teamwork on big creative projects.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Game dev might just be your future best friend… career-wise!')"> I enjoy music, animation, or art in games.</p>
+            <p class="question"><input type="checkbox" onclick="alert('From what we can tell, youre this close to joining the game dev side!')"> I like the idea of building interactive experiences.</p>
+            <p class="question"><input type="checkbox" onclick="alert('Congrats! Looks like game development is calling your name!')"> I enjoy imagining new characters, worlds, or challenges.</p>
+
+        </fieldset>
+
+        <hr>
+        <p>
+            <strong>How to interpret your results:</strong><br>
+            <ol>
+                <li>Review each section above (AI, Cybersecurity, Software Engineering, Game Development).</li>
+                <li>Count how many boxes you checked in each section.</li>
+                <li>The major with the highest number of checks is likely the one that matches your interests most.</li>
+            </ol>
+        </p>
+        <p><input type="reset" value="Clear All Answers"></p>
+
+    </form>
+    <p id="back-to-top">
+        <a href="#Top" style="color: #dc2f02;">back to top</a>
+    </p>
+    <div id="footer">
+        <p>&copy; 2025 Path2FIT &nbsp;|&nbsp; Built by ASU FIT Students</p>
+    </div>
+
+</body>
+</html>
