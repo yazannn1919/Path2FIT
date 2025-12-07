@@ -13,8 +13,6 @@
             margin-top: 25px;
         }
 
-        /*vidio-section styling*/
-        
         .Assesment-header{
             background-color: #eaf1ffd6;
         }
@@ -124,12 +122,28 @@
          Finish with a quick self-assessment that helps you pick the career that fits you best!</p>
 
     <div id="section">
+        <style>
+            #section table video,
+            #section table iframe {
+                width: 100%;
+                /* max-width: 350px; */
+                height: auto;
+                display: block;
+            }
+        </style>
+
         <h2 style="text-align: center; font-size: 30px; color:#13293d">Step Into the Journey to Find Your Dream Career!</h2>
         <p style="text-align: center;">Some videos that would put you on the right way for choosing your career path—watch<br>
              them to explore your interests, discover your strengths, and get started on a path that fits you.</p>
       <table>
         <tr>
-            <td><video src="./images/what is career.mp4" alt="video" controls muted></video></td>
+            <td>
+                <iframe width="350" height="9000"
+                    src="https://www.youtube.com/embed/K2mP36DoekA"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </td>
             <td>
                 <h3>What is Career !?</h3>
                 <p>
@@ -149,11 +163,23 @@
                     decisions about which IT career path aligns best with your personal attributes"
                 </p>
             </td>
-            <td><video src="./images/Using Self-Evaluation to Choose a Career.mp4" alt="video" controls muted></video></td>
+            <td>
+                <iframe width="350" height="200"
+                    src="https://www.youtube.com/embed/83ZlTTfQnws"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </td>
         </tr>
         <tr><td colspan="2"><hr></td></tr>
         <tr>
-            <td><video src="./images/Unlock Your Passion in Tech!.mp4" alt="video" controls muted></video></td>
+            <td>
+                <iframe width="350" height="200"
+                    src="https://www.youtube.com/embed/lk51JVISJHQ"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </td>
             <td>
                 <h3>Unlock Your Passion in Tech!</h3>
                 <p>
@@ -231,7 +257,6 @@
         <!-- Game Development Questions -->
         <fieldset>
             <legend>Game Development</legend>
-
             <p class="question"><input type="checkbox" onclick="alert('Boom! A new game dev preference just landed in your list!')"> I enjoy playing games and thinking about how they work.</p>
             <p class="question"><input type="checkbox" onclick="alert('Boom! A new game dev preference just landed in your list!')"> I like creative storytelling.</p>
             <p class="question"><input type="checkbox" onclick="alert('Boom! A new game dev preference just landed in your list!')"> I enjoy designing visuals or imagining worlds.</p>

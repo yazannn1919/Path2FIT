@@ -22,9 +22,9 @@ nav img {
 
 nav a {
     color: #13293d;
-    text-decoration: none;
+    text-decoration:none;
     padding: 10px;
-    font-weight: bold;
+    font-weight:bold;
 }
 
 nav a:hover {
